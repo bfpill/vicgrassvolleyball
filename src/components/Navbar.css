@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: #207D47;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+
+  .navbar img {
+    margin-right: 1rem;
+  }

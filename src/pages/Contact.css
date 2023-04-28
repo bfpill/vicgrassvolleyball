@@ -1,0 +1,42 @@
+.colourContainer {
+  background-color: rgb(208, 208, 208);
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+  align-content: center;
+  align-items: center;
+  
+}
+
+.aboutText {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.fakeContainer {
+  height: 500px;
+  color: white;
+}
+
+.contactLink {
+  font-size: 20px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.contactText {
+  font-weight: bold;
+}
+
+.linkText {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.linkText:hover {
+  text-decoration: underline;
+}
+
