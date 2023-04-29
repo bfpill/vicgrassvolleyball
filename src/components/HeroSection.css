@@ -17,7 +17,6 @@
     height: 100%;
     z-index: -1;
     animation: fade 1s linear forwards;
-    border-radius: 5px;
   }
   
   .hero-image {
@@ -44,10 +43,6 @@
   @media screen and (max-width: 1000px) {
     .hero-content {
       font-size: 18px;
-    }
-    .hero-section {
-      margin-left: 0%;
-      margin-right: 0%;
     }
   }
   

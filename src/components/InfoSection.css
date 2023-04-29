@@ -1,9 +1,145 @@
-.info-photo{ 
-    width: 250px;
+.info-photo-left {
+  max-height: 100%;
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transform: rotate(1.8deg);
 }
 
-.info-wrapper{
-    margin-top: 10px;
-    background-color: aliceblue;
+.info-photo-right {
+  max-height: 100%;
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transform: rotate(-1.8deg);
 }
 
+.info-wrapper {
+  margin-top: 20px;
+  padding: 3%;
+  margin-left: 2vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-text {
+  position: relative;
+  padding: 0.5vw;
+  border-radius: 5px;
+  border: 1px #000000;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 100%;
+  max-height:fit-content;
+  background-color: rgb(227, 227, 227);
+}
+
+.info-title {
+  margin-top: 6%;
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  color: #2c7e1f; /* White color */
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.info-second-title {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  color: #000000; /* White color */
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.info-third-title {
+    margin-top: 6%;
+    font-size: 2.6vw;
+    font-weight: bold;
+    text-align: center;
+    color: #2c7e1f; /* White color */
+    border-radius: 10px;
+    text-transform: uppercase;
+  }
+
+.bullet-point {
+  font-size: 3vw;
+  margin: 4%;
+  color: rgb(0, 0, 0);
+  font-family:'Haettenschweiler'
+}
+.info-subheading {
+  font-size: 3vw;
+  color: rgb(53, 53, 53);
+}
+.textlink{
+  display: none;
+}
+.textlink-bottom{
+  display: none;
+}
+@media screen and (max-width: 870px) {
+  .info-title {
+    font-size: 4vw;
+  }
+  .info-second-title {
+    font-size: 3vw;
+  }
+  .textlink-bottom{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #54a11d; 
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 0.25rem; 
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out; 
+  }
+  .bullet-point {
+    font-size: 3vw;
+    margin: 6%;
+    color: rgb(0, 0, 0);
+    font-family:'Haettenschweiler'
+  }
+}
+@media screen and (min-width: 870px) {
+  .textlink{
+    position: absolute;
+    bottom: 3vh;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 92%;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #54a11d; 
+    color: #FFFFFF; 
+    border: none;
+    border-radius: 0.25rem; 
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out; 
+  }
+}
+
+
+
+button:hover {
+  background-color: #3b5b03; 
+  transform: translateY(-0.1rem); 
+}

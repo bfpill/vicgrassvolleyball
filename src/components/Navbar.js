@@ -6,6 +6,7 @@ export function Navbar() {
   return (
     <nav className="navbar">
         <Link onClick={""} to="/">Home</Link>
+        <Link onClick={""} to="/Tournaments">Tournaments</Link>
         <Link onClick={""} to="/About">Contact</Link>
         <Link onClick={""} to="/Rules">Rules</Link>
     </nav>
