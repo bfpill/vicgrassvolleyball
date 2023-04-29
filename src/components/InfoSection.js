@@ -14,7 +14,7 @@ function InfoSection() {
         <>
             <div className="info-wrapper" data-text="Info Section">
                 <img src={teamShot1} className="info-photo-left" />
-                <div className="info-text">
+                <div className="info-text-container">
                     <div className="info-title">The Home of Grass</div>
                     <div className="info-second-title">Volleyball in Victoria</div>
                     <div className="info-subheading">
@@ -33,8 +33,9 @@ function InfoSection() {
             </div>
             <div className="info-wrapper" data-text="Info Section">
                 <img src={teamShot2} className="info-photo-right" />
-                <div className="info-text">
-                    <div className="info-third-title">Sign ups for May 7th Open now!</div>
+                <div className="info-text-container">
+                    <div className="info-third-title">Sign ups for May 7th</div>
+                    <div className="info-fourth-title">Open now!</div>
                     <div className="info-subheading">
                         <ul>
                             <li className="bullet-point">
@@ -42,9 +43,6 @@ function InfoSection() {
                             </li>
                             <li className="bullet-point">
                                %50 of pool goes to cash prize
-                            </li>
-                            <li className="bullet-point">
-                                Pools of 5 teams
                             </li>
                             <li className="bullet-point">
                                 Top two teams per pool advance to finals
