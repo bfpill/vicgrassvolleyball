@@ -4,6 +4,7 @@ import "./Home.css";
 
 import { Analytics } from "@vercel/analytics/react";
 import HeroSection from "../components/HeroSection";
+import InfoSection from "../components/InfoSection";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <div className="wrapper">
         <div className="content">
           <HeroSection/>
+          <InfoSection/>
         </div>
       </div>
       <Analytics />

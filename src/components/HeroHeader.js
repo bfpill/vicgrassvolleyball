@@ -4,7 +4,7 @@ import "./HeroHeader.css";
 function HeroHeader() {
   return (
     <>
-        <div key={Math.random()} className="hero-title glitch" data-text="Vic Grass Volleyball">
+        <div className="hero-title" data-text="Vic Grass Volleyball">
             Vic Grass Volleyball
         </div>
     </>

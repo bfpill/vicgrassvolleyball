@@ -1,12 +1,17 @@
 .hero-title {
-    margin-top: 13vw;
+    margin-top: 0vw;
     position: absolute;
+    top: 20%;
     text-align: center;
     font-size: 11vw;
     font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: 10px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1vw;
+    color: #f8f8f8;
+    text-decoration-color: white;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.5);
     animation: fade 1s linear forwards;
   }
+
+
+  
