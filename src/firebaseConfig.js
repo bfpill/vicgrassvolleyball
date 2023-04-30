@@ -44,13 +44,17 @@ const signInWithGoogle = async () => {
         uid: user.uid,
         name: user.displayName,
         authProvider: "google",
-        email: user.email,
+        email: user.email
       });
     }
   } catch (err) {
     console.error(err);
   }
 };
+
+const addAdditionalInformation = async (gender, age, experience) => {
+
+}
 
 const logInWithEmailAndPassword = async (email, password) => {
   try {
@@ -100,4 +104,5 @@ export {
   registerWithEmailAndPassword,
   sendPasswordReset,
   logout,
+  addAdditionalInformation
 };

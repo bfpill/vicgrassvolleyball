@@ -1,0 +1,140 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    background-color: #f2f2f2;
+  }
+  
+  .dashboard__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 60px;
+  }
+
+  .dashboard__header__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color:#fff;
+    background-color: #a4aaa7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 60px;
+  }
+  
+  .dashboard__user {
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .dashboard__title {
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .dashboard__btn {
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right:20px;
+    margin-left: 52%;
+  }
+  
+  .profile-picture{
+    height: 12vh;
+    width: 12vh;
+    border-radius: 50%;
+  }
+  .dashboard__btn:hover {
+    background-color: #005ea8;
+  }
+  
+  .dashboard__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .dashboard__section {
+    margin-left: 4vw;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width:20vw;
+    height:40vh;
+    min-width: fit-content;
+  }
+
+  .dashboard__your__tournaments {
+    margin-left: 4vw;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width:48vw;
+    height:40vh;
+    min-width: fit-content;
+  }
+  
+  .horizontal__divider{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .dashboard__section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dashboard__section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dashboard__section div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard__section span:first-of-type {
+    font-weight: bold;
+    color: #0077cc;
+  }
+  
+  .dashboard__section span:last-of-type {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .small-text{
+    align-self: flex-start;
+    margin-right: 5%;
+  }
