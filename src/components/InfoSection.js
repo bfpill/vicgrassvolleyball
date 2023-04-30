@@ -42,7 +42,7 @@ function InfoSection() {
                                Tournament format is triples (3v3)
                             </li>
                             <li className="bullet-point">
-                               %50 of pool goes to cash prize
+                               50% of pool goes to cash prize
                             </li>
                             <li className="bullet-point">
                                 Top two teams per pool advance to finals

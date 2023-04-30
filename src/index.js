@@ -7,8 +7,9 @@ import Home from "./pages/Home.js";
 import About from "./pages/About";
 import Root from "./pages/Root";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login"
 import ErrorPage from "./pages/error-page";
-
+import Dashboard from "./pages/Dashboard";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -22,7 +23,16 @@ const router = createBrowserRouter([
       {
         path: "/About",
         element: <About />,
+      },
+      {
+        path: "/Login",
+        element: <Login />,
+      },
+      {
+        path: "/Dashboard",
+        element: <Dashboard />,
       }
+
     ],
   },
 ]);
