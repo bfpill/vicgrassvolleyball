@@ -14,7 +14,7 @@ const players = [
   { id: 12, name: "Fergus Morrison", ranking: 12 },
   { id: 13, name: "Connor McCourt", ranking: 13 },
   { id: 14, name: "Joel Whitley", ranking: 14 },
-  { id: 15, name: "Klaas Mcintosh", ranking: 15 },
+  { id: 15, name: "Xavier Nelson", ranking: 15 },
   { id: 16, name: "James Lycett", ranking: 16 },
   { id: 17, name: "Jeremy Stevenson", ranking: 17 },
   { id: 18, name: "Toby Schnugg", ranking: 18 },
