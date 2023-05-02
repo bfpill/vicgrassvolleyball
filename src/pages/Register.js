@@ -8,22 +8,52 @@ import {
 } from "../firebaseConfig";
 import "./Register.css";
 function Register() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [name, setName] = useState("");
-  const [gender, setGender] = useState("");
-  const [age, setAge] = useState("");
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null)
+  const [firstName, setFirstName] = useState(null);
+  const [secondName, setSecondName] = useState(null);
+  const [gender, setGender] = useState(null);
+  const [age, setAge] = useState(null);
   const [experience, setExperience] = useState("unselected");
 
-  const [user, loading, error] = useAuthState(auth);
+  const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
   const navigate = useNavigate();
 
   const handleExperienceChange = (event) => {
     setExperience(event.target.value);
   };
 
+  const handleInputChange = (e) => {
+    const {id , value} = e.target;
+    if(id === "firstName"){
+      setFirstName(value);
+    }
+    if(id === "lastName"){
+      setLastName(value);
+    }
+    if(id === "email"){
+      setEmail(value);
+    }
+    if(id === "password"){
+      setPassword(value);
+    }
+    if(id === "gender"){
+      setGender(value);
+    }
+    if(id === "age"){
+      setAge(value);
+    }
+    if(id === "experience"){
+      setExperience(value);
+    }
+  }
+  
   const register = () => {
-    if (!name) alert("Please enter a name");
+    if (!firstName) alert("Please enter a first name");
+    else if (!secondName) alert("Please enter a last name");
     else if (!email) alert("Please enter an email");
     else if (!gender) alert("Please enter Gender");
     else if (!age) alert("Please enter Age");
@@ -31,8 +61,8 @@ function Register() {
     else if (experience === "unselected") alert("Please select an experience level");
     
     else{
-      user = registerWithEmailAndPassword(name, email, password);
-      loading = true;
+      setUser(registerWithEmailAndPassword(name, email, password, gender, age, experience));
+      setLoading(true);
     }
   };
 
@@ -48,29 +78,36 @@ function Register() {
         <input
           type="text"
           className="register__textBox"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={firstName}
+          onChange={(e) => handleInputChange(e)}
+          placeholder="Full Name"
+        />
+        <input
+          type="text"
+          className="register__textBox"
+          value={secondName}
+          onChange={(e) => handleInputChange(e)}
           placeholder="Full Name"
         />
         <input
           type="text"
           className="register__textBox"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => handleInputChange(e)}
           placeholder="E-mail Address"
         />
         <input
           type="password"
           className="register__textBox"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => handleInputChange(e)}
           placeholder="Password"
         />
         <input
           type="text"
           className="register__textBox"
           value={gender}
-          onChange={(e) => setGender(e.target.value)}
+          onChange={(e) => handleInputChange(e)}
           placeholder="Gender"
         />
         <input
@@ -99,7 +136,7 @@ function Register() {
               name="experience"
               value="beginner"
               checked={experience === "beginner"}
-              onChange={handleExperienceChange}
+              onChange={(e) => handleInputChange(e)}
             />
             <span className="experience__circle"></span>
             <span className="experience__text">Beginner</span>
@@ -110,7 +147,7 @@ function Register() {
               name="experience"
               value="intermediate"
               checked={experience === "intermediate"}
-              onChange={handleExperienceChange}
+              onChange={(e) => handleExperienceChange(e)}
             />
             <span className="experience__circle"></span>
             <span className="experience__text">Intermediate</span>
@@ -121,7 +158,7 @@ function Register() {
               name="experience"
               value="advanced"
               checked={experience === "advanced"}
-              onChange={handleExperienceChange}
+              onChange={(e) => handleExperienceChange(e)}
             />
             <span className="experience__circle"></span>
             <span className="experience__text">Advanced</span>
@@ -132,7 +169,7 @@ function Register() {
               name="experience"
               value="expert"
               checked={experience === "expert"}
-              onChange={handleExperienceChange}
+              onChange={(e) => handleExperienceChange(e)}
             />
             <span className="experience__circle"></span>
             <span className="experience__text">Expert</span>

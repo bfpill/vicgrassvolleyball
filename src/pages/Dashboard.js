@@ -4,8 +4,9 @@ import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import { auth, db, logout } from "../firebaseConfig";
 import { query, collection, getDocs, where } from "firebase/firestore";
-import Home from "../pages/Home";
 
+import Home from "../pages/Home";
+import PlayerRankings from "../components/PlayerRankings";
 import profilePicTest from "../images/blankProfilePic.png";
 
 function Dashboard() {
@@ -25,17 +26,6 @@ function Dashboard() {
         { playerId: 3, score: 30 },
       ],
     }
-  ];
-
-  const players = [
-    { id: 1, name: "Emilit Ma", ranking: 3 },
-    { id: 2, name: "Alex Zakowski", ranking: 2 },
-    { id: 3, name: "Jamieson Vail", ranking: 1 },
-    { id: 4, name: "Genel Sturgeon", ranking: 4 },
-    { id: 1, name: "Tarryn Angermeier", ranking: 5 },
-    { id: 2, name: "Ahmed Radwan", ranking: 6 },
-    { id: 3, name: "Klaas Mcintosh", ranking: 7 },
-    { id: 4, name: "Dave Hammersly", ranking: 8 },
   ];
 
   const fetchUserData = async () => {
@@ -86,16 +76,7 @@ function Dashboard() {
                 Skill Level: {user?.experience}
               </h4>
           </div>
-          <div className="dashboard__section">
-            <h2>Player Rankings</h2>
-            {players.map((player, index) => (
-              <div key={player.id}>
-                <span>{index + 1}. </span>
-                <span className="playerName">{player.name}</span>
-                {/* display player ranking here */}
-              </div>
-            ))}
-          </div>
+          <PlayerRankings thin={true}/>
         </div>
         <div className="horizontal__divider">
           <div className="dashboard__your__tournaments">

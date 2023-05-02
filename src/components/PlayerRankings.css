@@ -1,0 +1,49 @@
+.player-rankings-header{
+  font-size: 3vw;
+}
+
+.dashboard__section__thick{
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 36vw;
+  height:40vw;
+  min-width: 20vw;
+  overflow-y: scroll;
+  margin-left: 5vw;
+}
+
+.dashboard__section__thin{
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width:40vw;
+  height:20vw;
+  min-width: 20vw;
+  overflow-y: scroll;
+}
+
+.player-name {
+  font-weight: bold;
+}
+.number-div{
+  width: 40px;
+  display:inline-block;
+}
+/* style the ranking number */
+.dashboard__section__thick div span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 8px;
+  color: #888;
+}
+
+/* add some padding and border to the list items */
+.dashboard__section__thick div {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}

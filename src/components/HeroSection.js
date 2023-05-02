@@ -12,11 +12,10 @@ const HeroSection = () => {
     <div className="hero-section">
         <div className="video-container">
         <video className="video" autoPlay muted loop>
-            <source src={myVideo} type="video/mp4" />
-            <img src={myHero} className='hero-image'/>
+          <source src="https://firebasestorage.googleapis.com/v0/b/vicgrassvolleyball-90a74.appspot.com/o/tmpMovie%202.MP4?alt=media&token=80873e40-ae58-4ed6-904c-6e4a3a6fc648" type="video/mp4" />
+          <img src={myHero} className='hero-image'/>
         </video>
         </div>
-       
         <HeroHeader/>
         <div className="hero-content">
         </div>
