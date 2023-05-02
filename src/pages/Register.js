@@ -11,7 +11,7 @@ function Register() {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null)
   const [firstName, setFirstName] = useState(null);
-  const [secondName, setSecondName] = useState(null);
+  const [lastName, setLastName] = useState(null);
   const [gender, setGender] = useState(null);
   const [age, setAge] = useState(null);
   const [experience, setExperience] = useState("unselected");
@@ -53,7 +53,7 @@ function Register() {
   
   const register = () => {
     if (!firstName) alert("Please enter a first name");
-    else if (!secondName) alert("Please enter a last name");
+    else if (!lastName) alert("Please enter a last name");
     else if (!email) alert("Please enter an email");
     else if (!gender) alert("Please enter Gender");
     else if (!age) alert("Please enter Age");
@@ -61,7 +61,7 @@ function Register() {
     else if (experience === "unselected") alert("Please select an experience level");
     
     else{
-      setUser(registerWithEmailAndPassword(name, email, password, gender, age, experience));
+      setUser(registerWithEmailAndPassword(firstName, lastName, email, password, gender, age, experience));
       setLoading(true);
     }
   };
@@ -85,7 +85,7 @@ function Register() {
         <input
           type="text"
           className="register__textBox"
-          value={secondName}
+          value={lastName}
           onChange={(e) => handleInputChange(e)}
           placeholder="Full Name"
         />
