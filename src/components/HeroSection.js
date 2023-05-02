@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import ReactPlayer from 'react-player';
 
 import './HeroSection.css';
-import myVideo from "../videos/hero-video-1.MP4"
 import myHero from "../images/hero1.jpg"
 import HeroHeader from "./HeroHeader";
 
