@@ -3,7 +3,7 @@ import teamShot1 from "../images/teamShot1.png";
 import teamShot2 from "../images/teamShot2.png";
 import "./InfoSection.css";
 
-const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSceX01rfyydjtwKSMEcpp_vKb7Mchkm_Am5LJ22giYgCJyCkg/viewform?usp=sf_link"; 
+const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdfi3Av4QdAnRp9DNwVi6_AJYghFpsOA_b63120DzB-389YUA/viewform?usp=sharing";
 const handleSignUpClick = () => {
     window.open(formUrl, "_blank");
 };
@@ -33,7 +33,7 @@ function InfoSection() {
             <div className="info-wrapper" data-text="Info Section">
                 <img src={teamShot2} className="info-photo-right" />
                 <div className="info-text-container">
-                    <div className="info-third-title">Sign ups for May 7th</div>
+                    <div className="info-third-title">Sign ups for May 14th</div>
                     <div className="info-fourth-title">Open now!</div>
                     <div className="info-subheading">
                         <ul>
@@ -51,13 +51,13 @@ function InfoSection() {
                             </li>
                         </ul>
                         <div>
-                            <button onClick = {handleSignUpClick} className="textlink" >CLICK TO SIGN UP FOR MAY 7TH GRASS TRIPLES</button> 
+                            <button onClick = {handleSignUpClick} className="textlink" >CLICK TO SIGN UP FOR MAY 14TH GRASS TRIPLES</button> 
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <button onClick = {handleSignUpClick} className="textlink-bottom" >CLICK TO SIGN UP FOR MAY 7TH GRASS TRIPLES</button> 
+                <button onClick = {handleSignUpClick} className="textlink-bottom" >CLICK TO SIGN UP FOR MAY 14TH GRASS TRIPLES</button> 
             </div>
         </>
     );
