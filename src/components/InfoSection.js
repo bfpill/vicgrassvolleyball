@@ -3,7 +3,7 @@ import teamShot1 from "../images/teamShot1.png";
 import teamShot2 from "../images/teamShot2.png";
 import "./InfoSection.css";
 
-const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdfi3Av4QdAnRp9DNwVi6_AJYghFpsOA_b63120DzB-389YUA/viewform?usp=sharing";
+const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSehE78WjXzWnls1zvsESjnIkeuJjxVyC4FsYcKEnCLInyyFAA/viewform?usp=sharing";
 const handleSignUpClick = () => {
     window.open(formUrl, "_blank");
 };
@@ -51,13 +51,13 @@ function InfoSection() {
                             </li>
                         </ul>
                         <div>
-                            <button onClick = {handleSignUpClick} className="textlink" >CLICK TO SIGN UP FOR MAY 14TH GRASS TRIPLES</button> 
+                            <button onClick = {handleSignUpClick} className="textlink" >CLICK TO SIGN UP FOR JUNE 4th GRASS TRIPLES</button> 
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <button onClick = {handleSignUpClick} className="textlink-bottom" >CLICK TO SIGN UP FOR MAY 14TH GRASS TRIPLES</button> 
+                <button onClick = {handleSignUpClick} className="textlink-bottom" >CLICK TO SIGN UP FOR JUNE 4th GRASS TRIPLES</button> 
             </div>
         </>
     );
