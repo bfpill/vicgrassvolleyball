@@ -33,7 +33,7 @@ function InfoSection() {
             <div className="info-wrapper" data-text="Info Section">
                 <img src={teamShot2} className="info-photo-right" />
                 <div className="info-text-container">
-                    <div className="info-third-title">Sign ups for May 14th</div>
+                    <div className="info-third-title">Sign ups for June 4th</div>
                     <div className="info-fourth-title">Open now!</div>
                     <div className="info-subheading">
                         <ul>
