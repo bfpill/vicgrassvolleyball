@@ -3,7 +3,7 @@ import teamShot1 from "../images/teamShot1.png";
 import teamShot2 from "../images/teamShot2.png";
 import "./InfoSection.css";
 
-const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSehE78WjXzWnls1zvsESjnIkeuJjxVyC4FsYcKEnCLInyyFAA/viewform?usp=sharing";
+const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScRjFtY1L66HqFdDX5JB403tGaNYdd5T57VZxybUV9fJbFSjw/viewform?usp=sf_link";
 const handleSignUpClick = () => {
     window.open(formUrl, "_blank");
 };
@@ -11,6 +11,36 @@ const handleSignUpClick = () => {
 function InfoSection() {
     return (
         <>
+            <div className="info-wrapper" data-text="Info Section">
+                <img src={teamShot2} className="info-photo-right" />
+                <div className="info-text-container">
+                    <div className="info-third-title">Sign ups for October 1st</div>
+                    <div className="info-fourth-title">Open now!</div>
+                    <div className="info-subheading">
+                        <ul>
+                            <li className="bullet-point">
+                               Tournament format is triples (3v3)
+                            </li>
+                            <li className="bullet-point">
+                               50% of pool goes to cash prize
+                            </li>
+                            <li className="bullet-point">
+                                Tournament format is subject to player count.
+                            </li>
+                            <li className="bullet-point">
+                                9:30 am first serve at Princes Park
+                            </li>
+                        </ul>
+                        <div>
+                            <button onClick = {handleSignUpClick} className="textlink" >CLICK TO SIGN UP FOR OCTOBER 4th GRASS TRIPLES</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button onClick = {handleSignUpClick} className="textlink-bottom" >CLICK TO SIGN UP FOR OCTOBER 4th GRASS TRIPLES</button> 
+            </div>
+
             <div className="info-wrapper" data-text="Info Section">
                 <img src={teamShot1} className="info-photo-left" />
                 <div className="info-text-container">
@@ -29,35 +59,6 @@ function InfoSection() {
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div className="info-wrapper" data-text="Info Section">
-                <img src={teamShot2} className="info-photo-right" />
-                <div className="info-text-container">
-                    <div className="info-third-title">Sign ups for June 4th</div>
-                    <div className="info-fourth-title">Open now!</div>
-                    <div className="info-subheading">
-                        <ul>
-                            <li className="bullet-point">
-                               Tournament format is triples (3v3)
-                            </li>
-                            <li className="bullet-point">
-                               50% of pool goes to cash prize
-                            </li>
-                            <li className="bullet-point">
-                                Top two teams per pool advance to finals
-                            </li>
-                            <li className="bullet-point">
-                                9:30 am first serve at Princes Park
-                            </li>
-                        </ul>
-                        <div>
-                            <button onClick = {handleSignUpClick} className="textlink" >CLICK TO SIGN UP FOR JUNE 4th GRASS TRIPLES</button> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <button onClick = {handleSignUpClick} className="textlink-bottom" >CLICK TO SIGN UP FOR JUNE 4th GRASS TRIPLES</button> 
             </div>
         </>
     );

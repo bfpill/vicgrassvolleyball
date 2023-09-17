@@ -92,9 +92,11 @@
   color: rgb(53, 53, 53);
 }
 .textlink{
+  font-size: 10px;
   display: none;
 }
 .textlink-bottom{
+  font-size: small;
   display: none;
 }
 @media screen and (max-width: 870px) {
@@ -116,7 +118,7 @@
     color: #FFFFFF; 
     border: none;
     border-radius: 0.25rem; 
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: bold;
     text-align: left;
     text-decoration: none;
@@ -145,7 +147,7 @@
     color: #FFFFFF; 
     border: none;
     border-radius: 0.25rem; 
-    font-size: 3vw;
+    font-size: 2.4vw;
     font-weight: bold;
     text-align: left;
     text-decoration: none;
