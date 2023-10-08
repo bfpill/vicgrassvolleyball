@@ -3,7 +3,7 @@ import teamShot1 from "../images/teamShot1.png";
 import teamShot2 from "../images/teamShot2.png";
 import "./InfoSection.css";
 
-const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLScRjFtY1L66HqFdDX5JB403tGaNYdd5T57VZxybUV9fJbFSjw/viewform?usp=sf_link";
+const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdEtvZrswz1zXLhBHvbIfQScMZgET6rllV58t6dOFeBz2fFdA/viewform?usp=sf_link";
 const handleSignUpClick = () => {
     window.open(formUrl, "_blank");
 };
@@ -14,7 +14,7 @@ function InfoSection() {
             <div className="info-wrapper" data-text="Info Section">
                 <img src={teamShot2} className="info-photo-right" />
                 <div className="info-text-container">
-                    <div className="info-third-title">Sign ups for October 1st</div>
+                    <div className="info-third-title">Sign ups for October 22nd</div>
                     <div className="info-fourth-title">Open now!</div>
                     <div className="info-subheading">
                         <ul>
@@ -22,7 +22,7 @@ function InfoSection() {
                                Tournament format is triples (3v3)
                             </li>
                             <li className="bullet-point">
-                               50% of pool goes to cash prize
+                               30% of pool goes to cash prize
                             </li>
                             <li className="bullet-point">
                                 Tournament format is subject to player count.
@@ -32,13 +32,13 @@ function InfoSection() {
                             </li>
                         </ul>
                         <div>
-                            <button onClick = {handleSignUpClick} className="textlink" >CLICK TO SIGN UP FOR OCTOBER 4th GRASS TRIPLES</button> 
+                            <button onClick = {handleSignUpClick} className="textlink" >CLICK TO SIGN UP FOR OCTOBER 22nd GRASS TRIPLES</button> 
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <button onClick = {handleSignUpClick} className="textlink-bottom" >CLICK TO SIGN UP FOR OCTOBER 4th GRASS TRIPLES</button> 
+                <button onClick = {handleSignUpClick} className="textlink-bottom" >CLICK TO SIGN UP FOR OCTOBER 22nd GRASS TRIPLES</button> 
             </div>
 
             <div className="info-wrapper" data-text="Info Section">
